@@ -9,7 +9,7 @@ namespace TeduShop.Data.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(TeduShop.Data.TedushopDbContext context)

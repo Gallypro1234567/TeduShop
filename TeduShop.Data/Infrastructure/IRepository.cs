@@ -14,12 +14,13 @@ namespace TeduShop.Data.Infrastructure
 
         // danh dau 1 entity xoa
         void Delete(T entity);
+        void Delete(int id);
 
         // Delete multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
 
         // get an entity by int id
-        T GettingleById(int id);
+        T GetSingleById(int id);
 
         T GetSingByCondition(Expression<Func<T, bool>> expression, String[] includes = null);
 

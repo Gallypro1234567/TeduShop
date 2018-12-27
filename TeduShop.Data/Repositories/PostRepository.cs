@@ -8,9 +8,9 @@ using TeduShop.Model.Model;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IPostRepository
+    public interface IPostRepository : IRepository<Post>
     {
-
+         
     }
     public class PostRepository : RepositoryBase<Post>, IPostRepository
     {
@@ -19,3 +19,4 @@ namespace TeduShop.Data.Repositories
         }
     }
 }
+ 

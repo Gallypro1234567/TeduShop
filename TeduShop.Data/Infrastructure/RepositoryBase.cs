@@ -49,6 +49,12 @@ namespace TeduShop.Data.Infrastructure
         {
             dbSet.Remove(entity);
         }
+        public virtual void Delete(int id)
+        {
+            var entity = dbSet.Find(id); 
+            dbSet.Remove(entity);
+        }
+
 
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
         {
@@ -128,10 +134,7 @@ namespace TeduShop.Data.Infrastructure
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
 
-        public T GettingleById(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public T GetSingByCondition(Expression<Func<T, bool>> expression, string[] includes = null)
         {

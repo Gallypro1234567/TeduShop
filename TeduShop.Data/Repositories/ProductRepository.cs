@@ -8,9 +8,9 @@ using TeduShop.Model.Model;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository: IRepository<Product>
     {
-        IEnumerable<Product> GetByalias(string alias);
+      
     }
     public class ProductRepository : Infrastructure.RepositoryBase<Product>, IProductRepository
     {
@@ -18,9 +18,6 @@ namespace TeduShop.Data.Repositories
         {
         }
 
-        public IEnumerable<Product> GetByalias(string alias)
-        {
-            return this.DbContext.Products.Where(x => x.Alias == alias);
-        }
+         
     }
 }

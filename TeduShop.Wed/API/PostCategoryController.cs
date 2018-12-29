@@ -21,18 +21,12 @@ namespace TeduShop.Wed.API
         public HttpResponseMessage Get(HttpRequestMessage request )
         {
             return CreatHttpResponse(request, () =>
-            {
-                HttpResponseMessage response = null;
-                if (ModelState.IsValid)
-                {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
-                    var listcartegory = _postCategoryService.GetAll();
-                    _postCategoryService.Save();
-                    response = request.CreateResponse(HttpStatusCode.OK, listcartegory);
-                }
+            {                          
+                
+                var listcartegory = _postCategoryService.GetAll();
+                _postCategoryService.Save();
+                HttpResponseMessage        response = request.CreateResponse(HttpStatusCode.OK, listcartegory);
+                
                 return response;
             });
         }

@@ -1,0 +1,9 @@
+{
+    "name": "asp.net",
+    "private": true,
+    "directory": "Scripts/plugins",
+    "dependencies": {
+        "angular": "~1.7.5"
+
+    }
+}

@@ -4,11 +4,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Web;
 using TeduShop.Data;
 using TeduShop.Model.Models;
 
@@ -16,7 +13,7 @@ namespace TeduShop.Wed.App_Start
 {
     public class ApplicationUserStore : UserStore<ApplicationUser>
     {
-        public ApplicationUserStore(TedushopDbContext context) : base (context)
+        public ApplicationUserStore(TedushopDbContext context) : base(context)
         {
         }
     }
@@ -52,8 +49,8 @@ namespace TeduShop.Wed.App_Start
             // Configure user lockout defaults
             manager.UserLockoutEnabledByDefault = true;
             manager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
-            manager.MaxFailedAccessAttemptsBeforeLockout = 5;         
-           
+            manager.MaxFailedAccessAttemptsBeforeLockout = 5;
+
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
             {

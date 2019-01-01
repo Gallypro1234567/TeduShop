@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TeduShop.Model.Model
 {
@@ -23,11 +19,11 @@ namespace TeduShop.Model.Model
         [MaxLength(256)]
         public String URl { set; get; }
 
-
         public int? DisplayOrder { set; get; }
 
         [Required]
         public int GroupID { set; get; }
+
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }
 
@@ -35,7 +31,5 @@ namespace TeduShop.Model.Model
         public string Target { set; get; }
 
         public bool Status { set; get; }
-
-
     }
 }

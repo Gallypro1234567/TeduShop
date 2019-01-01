@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TeduShop.Model.Model
 {
@@ -39,6 +35,5 @@ namespace TeduShop.Model.Model
         public string PaymentMethod { set; get; }
 
         public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }
-
     }
 }

@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 using TeduShop.Model.Abstract;
 
 namespace TeduShop.Model.Model
 {
     [Table("Products")]
-    public class Product : Abstract.Auditable
+    public class Product : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -33,6 +29,7 @@ namespace TeduShop.Model.Model
 
         [Column(TypeName = "xml")]
         public string MoreImages { set; get; }
+
         public Decimal Price { set; get; }
 
         public Decimal? PromotionPrice { set; get; }
@@ -40,6 +37,7 @@ namespace TeduShop.Model.Model
 
         [MaxLength(500)]
         public String Description { set; get; }
+
         public string Content { set; get; }
 
         public bool? HomeFlag { set; get; }
@@ -48,6 +46,7 @@ namespace TeduShop.Model.Model
 
         [ForeignKey("CategoryID")]
         public virtual ProductCategory ProductCategory { set; get; }
+
         public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }
     }
 }

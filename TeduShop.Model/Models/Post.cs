@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TeduShop.Model.Model
 {
@@ -41,6 +37,7 @@ namespace TeduShop.Model.Model
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
+
         public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }

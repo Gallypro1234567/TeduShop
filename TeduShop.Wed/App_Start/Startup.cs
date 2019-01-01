@@ -1,16 +1,14 @@
-﻿using System;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
-using Autofac;
+﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.DataProtection;
 using Owin;
+using System.Reflection;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
 using TeduShop.Data;
 using TeduShop.Data.Infrastructure;
 using TeduShop.Data.Repositories;
@@ -48,7 +46,6 @@ namespace TeduShop.Wed.App_Start
             builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
             builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
 
-
             // repositories
             builder.RegisterAssemblyTypes(typeof(PostCategoryRepository).Assembly)
                 .Where(t => t.Name.EndsWith("Repository"))
@@ -61,8 +58,7 @@ namespace TeduShop.Wed.App_Start
             Autofac.IContainer container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
-            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver((IContainer)container);  // set the web Api DenpendencyResolver 
-
+            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver((IContainer)container);  // set the web Api DenpendencyResolver
         }
     }
 }

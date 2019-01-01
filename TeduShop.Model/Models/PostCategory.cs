@@ -5,11 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeduShop.Model.Abstract;
 
 namespace TeduShop.Model.Model
 {
     [Table("PostCategory")]
-    public class PostCategory : Abstract.Auditable
+    public class PostCategory :  Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

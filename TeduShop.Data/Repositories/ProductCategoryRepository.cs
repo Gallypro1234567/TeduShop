@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TeduShop.Data.Infrastructure;
 using TeduShop.Model.Model;
@@ -10,6 +9,7 @@ namespace TeduShop.Data.Repositories
     {
         IEnumerable<ProductCategory> GetByalias(string alias);
     }
+
     public class ProductCategoryRepository : RepositoryBase<ProductCategory>, IProductCategoryRepository
     {
         public ProductCategoryRepository(DbFactory dbFactory) : base(dbFactory)

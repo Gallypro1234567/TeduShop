@@ -5,15 +5,22 @@
 
 <!DOCTYPE html>
 
-<html ng-app>
+<html ng-app="myModule" >
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <script src="~/Scripts/plugins/angular/angular.js"></script>
+    <script src="~/Scripts/spa/app.js"></script>
 </head>
 <body>
-    <div> 
-        10 + 20 = {{10+20}}
+    <div ng-controller="SchoolController">
+        <div ng-controller="StudentController">
+            in student: {{message}}
+        </div>
+        <div ng-controller="TeacherController">
+            in teacher: {{message}}
+        </div>
+        in School: {{message}}
     </div>
 </body>
 </html>

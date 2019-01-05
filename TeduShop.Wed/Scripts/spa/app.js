@@ -2,18 +2,27 @@
 
 var myApp = angular.module('myModule', []);
 
-myApp.controller("StudentController", StudentController);
-myApp.controller("TeacherController", TeacherController);
 myApp.controller("SchoolController", SchoolController);
- 
+myApp.service('Validator', Validator);
+SchoolController.$inject = ['$scope', 'Validator'];
 
 // khoi tao controll
-function StudentController($scope) {
-    $scope.message = "this is my love when i was student";
+ 
+function SchoolController($scope, Validator) {
+   
+    $scope.CheckNumber = function () {
+        $scope.message = Validator.checknumber($scope.num);
+    }
+    $scope.num = 1;
 }
-function TeacherController($scope) {
-    $scope.message = " this is my teacher in life";
-}
-function SchoolController($scope) {
-    $scope.message= "this is my school THPT Thuanhoa"
+function Validator($window) {
+    return {
+        checknumber: checknumber
+    }
+    function checknumber(input) {
+        if (input % 2 == 0) {
+            return 'this is even';
+        }
+        else return 'this is odd';
+    }
 }

@@ -77,6 +77,14 @@
     <Compile Include="Migrations\201812291115592_Changkey.Designer.cs">
       <DependentUpon>201812291115592_Changkey.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901161042003_InitialDB1.cs" />
+    <Compile Include="Migrations\201901161042003_InitialDB1.Designer.cs">
+      <DependentUpon>201901161042003_InitialDB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901161510424_InitialDB2.cs" />
+    <Compile Include="Migrations\201901161510424_InitialDB2.Designer.cs">
+      <DependentUpon>201901161510424_InitialDB2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
@@ -123,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812291115592_Changkey.resx">
       <DependentUpon>201812291115592_Changkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901161042003_InitialDB1.resx">
+      <DependentUpon>201901161042003_InitialDB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901161510424_InitialDB2.resx">
+      <DependentUpon>201901161510424_InitialDB2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

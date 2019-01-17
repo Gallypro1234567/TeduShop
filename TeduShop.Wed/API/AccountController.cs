@@ -7,7 +7,7 @@ using System.Web.Http;
 
 using TeduShop.Wed.App_Start;
 
-namespace TeduShop.Wed.API
+namespace TeduShop.Wed.Api
 {
     [RoutePrefix("api/account")]
     public class AccountController : ApiController

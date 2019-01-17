@@ -9,7 +9,7 @@ using TeduShop.Wed.infrastructure.Core;
 using TeduShop.Wed.infrastructure.Extensions;
 using TeduShop.Wed.Models;
 
-namespace TeduShop.Wed.API
+namespace TeduShop.Wed.Api
 {
     [RoutePrefix("api/postcategory")]
     public class PostCategoryController : ApiControllerBase

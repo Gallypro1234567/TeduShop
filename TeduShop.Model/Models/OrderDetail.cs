@@ -12,14 +12,14 @@ namespace TeduShop.Model.Model
 
         [Key]
         [Column(Order = 2)]
-        public int ProductsID { set; get; }
+        public int ProductID { set; get; }
+
+        public int Quantitty { set; get; }
 
         [ForeignKey("OrderID")]
         public virtual Order Order { set; get; }
 
-        [ForeignKey("ProductsID")]
+        [ForeignKey("ProductID")]
         public virtual Product Product { set; get; }
-
-        public int Quantily { set; get; }
     }
 }

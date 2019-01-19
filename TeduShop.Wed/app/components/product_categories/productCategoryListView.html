@@ -24,7 +24,7 @@
         <div class="box-body">
         <div class="col-md-6">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" ng-model="keyword" placeholder="thứ bạn cần tìm..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" class="form-control" ng-model="keyword" placeholder="Thứ bạn cần tìm..." aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-success" ng-click="search()" type="button" id="button-addon2">Tìm kiếm</button>
                 </div>
@@ -59,7 +59,7 @@
                         </tr>
                         <tfoot>
                             <tr>
-                                <td colspan="4"> tổng số bản ghi : {{totalCount}}</td>
+                                <td colspan="5"><span class="pull-right">Trang {{page + 1}} - Tổng số bản ghi : {{totalCount}}</span></td>
                             </tr>
                         </tfoot>
                     </table>

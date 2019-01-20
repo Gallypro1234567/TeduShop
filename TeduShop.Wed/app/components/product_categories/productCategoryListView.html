@@ -22,14 +22,19 @@
             </div>
         </div>
         <div class="box-body">
-        <div class="col-md-6">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" ng-model="keyword" placeholder="Thứ bạn cần tìm..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-success" ng-click="search()" type="button" id="button-addon2">Tìm kiếm</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" ng-model="keyword" placeholder="Thứ bạn cần tìm..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-success" ng-click="search()" type="button" id="button-addon2">Tìm kiếm</button>
+                        </div>
+                    </div> <!--input group-->
                 </div>
-            </div>
-        </div>
+                <div class="col-md-6">
+                    <button class="btn btn-success" ui-sref="add_product_category">Thêm mới</button>
+                </div>
+            </div>        
             <div class="row">
                 <div class="col-md-12">
                     <table class="table table-bordered">

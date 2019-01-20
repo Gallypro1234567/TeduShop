@@ -31,7 +31,7 @@
                     notificationService.displayWarning('không tồn tại bản ghi nào')
                 }
                 else {
-                    notificationService.displaySuccess('Thông tin đã được tìm thấy ' + result.data.TotalCount + " bản ghi");
+                    notificationService.displaySuccess('Hệ thống đã được tìm thấy ' + result.data.TotalCount + " bản ghi");
                 }
                 $scope.productCategories = result.data.Items;
                 $scope.page = result.data.Page;

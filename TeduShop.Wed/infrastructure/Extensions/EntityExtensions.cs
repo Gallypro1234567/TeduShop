@@ -50,5 +50,25 @@ namespace TeduShop.Wed.infrastructure.Extensions
             post.Status = postVM.Status;
 
         }
+        public static void UpdateProductCategory(this ProductCategory productCategory, ProductCategoryViewModel productVM)
+        {
+
+            productCategory.ID = productVM.ID;
+            productCategory.Name = productVM.Name;
+            productCategory.Alias = productVM.Alias;
+            productCategory.ParentID = productVM.ParentID;
+            productCategory.Description = productVM.Description;
+            productCategory.DisplayOrder = productVM.DisplayOrder;
+            productCategory.Image = productVM.Image;
+            productCategory.HomeFlag = productVM.HomeFlag;
+            productCategory.CreatedDate = productVM.CreatedDate;
+            productCategory.CreatedBy = productVM.CreatedBy;
+            productCategory.MetaKeyword = productVM.MetaKeyword;
+            productCategory.MetaDescription = productVM.MetaDescription;
+            productCategory.UpdateBy = productVM.UpdateBy;
+            productCategory.Status = productVM.Status;
+
+
+        }
     }
 }

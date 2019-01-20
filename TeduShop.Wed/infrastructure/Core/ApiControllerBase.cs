@@ -21,7 +21,7 @@ namespace TeduShop.Wed.infrastructure.Core
         }
 
 
-        protected HttpResponseMessage CreatHttpResponse(HttpRequestMessage requestMessage, Func<HttpResponseMessage> function)
+        protected HttpResponseMessage CreateHttpResponse(HttpRequestMessage requestMessage, Func<HttpResponseMessage> function)
         {
             HttpResponseMessage response = null;
             try

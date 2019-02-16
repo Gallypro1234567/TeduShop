@@ -61,29 +61,9 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201812271114179_InitialDB.cs" />
-    <Compile Include="Migrations\201812271114179_InitialDB.Designer.cs">
-      <DependentUpon>201812271114179_InitialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812280624078_AddErrorTable.cs" />
-    <Compile Include="Migrations\201812280624078_AddErrorTable.Designer.cs">
-      <DependentUpon>201812280624078_AddErrorTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812291019415_Intergrate-AspnetIdentity.cs" />
-    <Compile Include="Migrations\201812291019415_Intergrate-AspnetIdentity.Designer.cs">
-      <DependentUpon>201812291019415_Intergrate-AspnetIdentity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812291115592_Changkey.cs" />
-    <Compile Include="Migrations\201812291115592_Changkey.Designer.cs">
-      <DependentUpon>201812291115592_Changkey.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901161042003_InitialDB1.cs" />
-    <Compile Include="Migrations\201901161042003_InitialDB1.Designer.cs">
-      <DependentUpon>201901161042003_InitialDB1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901161510424_InitialDB2.cs" />
-    <Compile Include="Migrations\201901161510424_InitialDB2.Designer.cs">
-      <DependentUpon>201901161510424_InitialDB2.cs</DependentUpon>
+    <Compile Include="Migrations\201902130740176_InitialDB.cs" />
+    <Compile Include="Migrations\201902130740176_InitialDB.Designer.cs">
+      <DependentUpon>201902130740176_InitialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,23 +100,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812271114179_InitialDB.resx">
-      <DependentUpon>201812271114179_InitialDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812280624078_AddErrorTable.resx">
-      <DependentUpon>201812280624078_AddErrorTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812291019415_Intergrate-AspnetIdentity.resx">
-      <DependentUpon>201812291019415_Intergrate-AspnetIdentity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812291115592_Changkey.resx">
-      <DependentUpon>201812291115592_Changkey.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901161042003_InitialDB1.resx">
-      <DependentUpon>201901161042003_InitialDB1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901161510424_InitialDB2.resx">
-      <DependentUpon>201901161510424_InitialDB2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902130740176_InitialDB.resx">
+      <DependentUpon>201902130740176_InitialDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

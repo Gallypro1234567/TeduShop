@@ -1,14 +1,17 @@
 {
-    "name": "asp.net",
-    "private": true,
-    "directory": "Scripts/plugins",
-    "dependencies": {
-        "angular": "~1.7.5",
-        "angular-ui-router": "~1.0.20",
-        "Jquery": "~3.3.1",
-        "bootstrap": "~4.2.1",
-        "slimScroll": "~1.3.8",
-        "fastclick": "~1.0.6",
-        "toastr": "~2.1.3"
-    }
+  "name": "asp.net",
+  "private": true,
+  "directory": "Scripts/plugins",
+  "dependencies": {
+    "angular": "~1.7.5",
+    "angular-ui-router": "~1.0.20",
+    "jquery": "~3.3.1",
+    "bootstrap": "~4.2.1",
+    "slimScroll": "~1.3.8",
+    "fastclick": "~1.0.6",
+    "toastr": "~2.1.3"
+  },
+  "resolutions": {
+    "jquery": "~3.3.1"
+  }
 }

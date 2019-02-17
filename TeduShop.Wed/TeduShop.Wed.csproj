@@ -267,6 +267,7 @@
     <Content Include="Assets\admin\css\alt\AdminLTE-select2.min.css" />
     <Content Include="Assets\admin\css\alt\AdminLTE-without-plugins.css" />
     <Content Include="Assets\admin\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Assets\admin\css\custom.css" />
     <Content Include="Assets\admin\css\skins\skin-black-light.css" />
     <Content Include="Assets\admin\css\skins\skin-black-light.min.css" />
     <Content Include="Assets\admin\css\skins\skin-black.css" />
